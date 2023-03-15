@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="NewJiraStyle.css">
+<title>new ticket</title>
+</head>
+<body>
+
+
+<form method="get" action="/JiraTool/login">
+<div class="box">
+<h1>Create new ticket</h1>
+
+<input type="text" name="assignee" placeholder="Assignee" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+  
+<input type="text" name="reportee" placeholder="Reportee" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+
+<input type="text" name="problem" placeholder="Problem Description" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+
+<select name="status" id="status" class="email2">
+  <option name="To-do" >To-do</option>
+  <option name="Analysis Wip">Analysis Wip</option>
+  <option name="Analysis Done">Analysis Done</option>
+  <option name="Dev Wip">Dev Wip</option>
+   <option name="Dev Done">Dev Done</option>
+</select>
+<button class="btn" type="submit">create</button> 
+
+
+  
+</div> <!-- End Box -->
+  
+</form>
+</body>
+</html>
